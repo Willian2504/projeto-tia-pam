@@ -144,7 +144,7 @@ nav ul li a {
 footer {
     display: flex;
     border: 1px solid black;
-    width: 100%;
+    width: auto;
     height: 200px;
 }
 
