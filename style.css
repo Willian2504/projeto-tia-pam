@@ -49,6 +49,7 @@
     border-radius: 0 4px 4px 0;
     background-color: #ddd;
     cursor: pointer;
+    height: 40px;
 }
 
 .search-form button:hover {
@@ -77,12 +78,18 @@ nav ul li a {
     
 }
 
-/*#cadastro{
-    margin-top: 70px;
-    margin-left: 200px;
-    border-radius: 400px;
-    color: white;
-}*/
+#cadastro{
+    display: inline;
+    
+}
+
+#cadastro ul {
+    list-style-type: none;
+}
+
+#cadastro ul li{
+    margin: 0 10px;
+}
 
 .novidades{
    
@@ -90,6 +97,11 @@ nav ul li a {
     width: auto;
     height: 300px;
    
+}
+
+body{
+    text-decoration: none;
+    font-weight: bold;
 }
 
 #produto1{
