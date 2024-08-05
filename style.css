@@ -18,10 +18,12 @@
     margin: 0;
     padding: 0;
     background-color: rgb(71, 187, 187);
+    position: relative; /* Adiciona o contexto para o posicionamento absoluto */
 }
 
-.header-content h1 {
-    margin: 0;
+.header-content img {
+    width: 100px;
+    height: 100px;
 }
 
 .search-container {
@@ -31,7 +33,6 @@
 .search-form {
     display: inline-flex;
     align-items: center;
-    
 }
 
 .search-form input[type="text"] {
@@ -56,7 +57,7 @@
     background-color: #ccc;
 }
 
-nav{
+nav {
     margin-top: 10px;
 }
 
@@ -64,6 +65,7 @@ nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    padding-bottom: 9px;
 }
 
 nav ul li {
@@ -75,28 +77,66 @@ nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    
 }
 
-#cadastro{
-    display: inline;
-    
+#cadastro {
+    position: absolute; /* Permite posicionamento absoluto */
+    bottom: 0; /* Alinha ao fundo do header */
+    right: 0; /* Alinha à direita do header */
+    margin: 0;
+    padding: 10px; /* Adiciona algum espaçamento */
 }
 
 #cadastro ul {
     list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-#cadastro ul li{
+#cadastro ul li {
+    display: inline;
     margin: 0 10px;
 }
 
-.novidades{
-   
-    border: 1px solid black;
-    width: auto;
-    height: 300px;
-   
+
+.carrossel{
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carrossel-imagens{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carrossel-imagens img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.carrossel-dots {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 5px;
+}
+
+.dot {
+    width: 15px;
+    height: 15px;
+    background-color: #bbb;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #717171;
 }
 
 body{
